@@ -1,0 +1,53 @@
+// Press Shift twice to open the Search Everywhere dialog and type `show whitespaces`,
+// ունենալ  դասարան 
+public class Main {
+    public static void main(String[] args) {
+        Dasaran dasran1 = new Dasaran("Html", 20);
+        Dasaran dasran2 = new Dasaran("Sas", 21);
+        Dasaran dasran3 = new Dasaran("Scss", 22);
+        Dasaran dasran4 = new Dasaran("Javascript", 23);
+        Dasaran dasran5 = new Dasaran("Jquery", 24);
+        Dasaran []array={dasran1,dasran2,dasran3,dasran4,dasran5};
+        for (int i = 0; i < array.length; i++) {
+            System.out.println(array[i].getName() + " "+ +array[i].getQount());
+            System.out.println("amenacacr" +dasran1);
+            System.out.println("dasarana return   "+dasran1.getQount());
+
+        }
+    }
+}
+===================================================================dasaran class
+public class Dasaran {
+  private String name;
+  private Integer qount;
+
+    public Dasaran() {
+    }
+
+    public Dasaran(String name, Integer qount) {
+        this.name = name;
+        this.qount = qount;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public Integer getQount() {
+        return qount +10;
+    }
+
+    public void setQount(Integer qount) {
+        this.qount = qount;
+
+
+
+
+
+    }
+}
+

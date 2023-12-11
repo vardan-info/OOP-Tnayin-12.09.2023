@@ -1,0 +1,75 @@
+// Press Shift twice to open the Search Everywhere dialog and type `show whitespaces`,
+// 3.ունենալ ուսանող կլասը  
+public class Main {
+    public static void main(String[] args) {
+      Usaxox usaxox1=new Usaxox("React","Vu",20,5);
+      Usaxox usaxox2=new Usaxox("Php","laravel",21,6);
+      Usaxox usaxox3=new Usaxox("Xammp","apach",22,7);
+      Usaxox usaxox4=new Usaxox("Python","django",23,8);
+      Usaxox usaxox5=new Usaxox("Java","Spring",24,9);
+
+        Usaxox []array = {usaxox1,usaxox2,usaxox3,usaxox4,usaxox5};
+
+        for (int i = 0; i <array.length ; i++) {
+            System.out.println(array[i].getName()+" " + array[i].getLastName()+" " + array[i].getAge()+""+array[i].getRating());
+
+        }
+ System.out.println("--->cacr usanox<--->" +usaxox1.getRating());
+
+
+
+
+    }
+
+}
+=======================================================================================Usanox class
+public class Usaxox {
+   private String name;
+   private String lastName;
+   private int age;
+   private int rating;
+
+   public Usaxox() {
+   }
+ public Usaxox(String name, String lastName, int age, int rating) {
+      this.name = name;
+      this.lastName = lastName;
+      this.age = age;
+      this.rating = rating;
+
+
+   }
+   public String getName() {
+      return name;
+   }
+
+   public void setName(String name) {
+      this.name = name;
+   }
+
+   public String getLastName() {
+      return lastName;
+   }
+
+   public void setLastName(String lastName) {
+      this.lastName = lastName;
+   }
+
+   public int getAge() {
+      return age;
+   }
+
+   public void setAge(int age) {
+      this.age = age;
+   }
+
+   public int getRating() {
+      return rating;
+   }
+
+   public void setRating(int rating) {
+      this.rating = rating;
+   }
+
+
+}
